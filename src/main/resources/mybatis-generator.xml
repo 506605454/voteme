@@ -42,7 +42,7 @@
         <!-- !!!! Table Configurations !!!! -->
         <table tableName="vote_content" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                enableUpdateByExample="false"/>
-        <table tableName="vote_options" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+        <table tableName="village_info" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                enableUpdateByExample="false"/>
 
 
