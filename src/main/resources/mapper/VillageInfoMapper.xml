@@ -97,6 +97,48 @@
       </if>
     </trim>
   </insert>
+
+  <insert id="createVillageInfo" parameterType="com.hqw.voteme.domain.VillageInfo">
+      insert into village_info
+      <trim prefix="(" suffix=")" suffixOverrides="," >
+
+          <if test="villageName != null" >
+              village_name,
+          </if>
+          <if test="villageCode != null" >
+              village_code,
+          </if>
+          <if test="villageLng != null" >
+              village_lng,
+          </if>
+          <if test="vilageLat != null" >
+              vilage_lat,
+          </if>
+          <if test="vilageAddr != null" >
+              vilage_addr,
+          </if>
+      </trim>
+      <trim prefix="values (" suffix=")" suffixOverrides="," >
+
+          <if test="villageName != null" >
+              #{villageName,jdbcType=VARCHAR},
+          </if>
+          <if test="villageCode != null" >
+              #{villageCode,jdbcType=VARCHAR},
+          </if>
+          <if test="villageLng != null" >
+              #{villageLng,jdbcType=VARCHAR},
+          </if>
+          <if test="vilageLat != null" >
+              #{vilageLat,jdbcType=VARCHAR},
+          </if>
+          <if test="vilageAddr != null" >
+              #{vilageAddr,jdbcType=VARCHAR},
+          </if>
+      </trim>
+  </insert>
+
+
   <update id="updateByPrimaryKeySelective" parameterType="com.hqw.voteme.domain.VillageInfo" >
     <!--
       WARNING - @mbggenerated

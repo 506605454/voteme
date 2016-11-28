@@ -50,4 +50,6 @@ public interface VillageInfoMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(VillageInfo record);
+
+    int createVillageInfo(VillageInfo villageInfo);
 }

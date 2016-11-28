@@ -16,7 +16,7 @@ public class VoteCommitController {
     private Logger logger = Logger.getLogger(Logger.class);
 
     @ApiOperation(value="新增投票", notes="根据小区ID新增投票")
-    @RequestMapping(value = "/votes",method = RequestMethod.POST)
+    @RequestMapping(value = "/villages/{id}/votes",method = RequestMethod.POST)
     public AjaxResult createNewVote(@RequestBody ViewVote viewVote){
         logger.info("新增投票");
         logger.info(viewVote);
